@@ -6,35 +6,29 @@ html[theme='dark-mode'] {
   /* Designed using https://colordesigner.io/gradient-generator */
   /* Design principles used by https://www.refactoringui.com/previews/building-your-color-palette */
   /* Base Color */
-  --base-900: #1c0202;
-  --base-800: #450d13;
-  --base-700: #740e19;
-  --base-600: #a50c19;
-  --base-500: #d61212;
-  --base-400: #e85348;
-  --base-300: #f48079;
-  --base-200: #f9aaa8;
-  --base-100: #f7d4d4;
+  --base-800: #611818;
+  --base-700: #891b1b;
+  --base-600: #b82020;
+  --base-500: #dc3030;
+  --base-400: #e46464;
+  --base-300: #f5aaaa;
+  --base-200: #fce8e8;
   /* Accent Color */
-  --accent-900: #030316;
-  --accent-800: #001443;
-  --accent-700: #001b74;
-  --accent-600: #001da5;
-  --accent-500: #1712d6;
-  --accent-400: #4c44de;
-  --accent-300: #706ae3;
-  --accent-200: #918ee5;
-  --accent-100: #b2b2e4;
+  --accent-800: #203d54;
+  --accent-700: #1a4971;
+  --accent-600: #2368a2;
+  --accent-500: #3183c8;
+  --accent-400: #63a2d8;
+  --accent-300: #aad4f5;
+  --accent-200: #eff8ff;
   /* Grays */
-  --gray-900: #0f0f0f;
-  --gray-800: #282727;
-  --gray-700: #423f3f;
-  --gray-600: #5e5959;
-  --gray-500: #7c7575;
-  --gray-400: #978f8f;
-  --gray-300: #b3a9a9;
-  --gray-200: #d0c4c4;
-  --gray-100: #ede0e0;
+  --gray-800: #212934;
+  --gray-700: #5f6b7a;
+  --gray-600: #8895a7;
+  --gray-500: #b8c4ce;
+  --gray-400: #cfd6de;
+  --gray-300: #e1e7ec;
+  --gray-200: #f8f9fa;
 }
 
 body {
@@ -56,12 +50,18 @@ a:hover {
 
 /* markdown content styles */
 blockquote {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 1em;
-  margin-left: 0px;
-  border-left: 3px solid var(--gray-100);
-  color: var(--gray-400);
+  border-left: 3px solid var(--gray-400);
+  color: var(--gray-600);
+  padding: 5px 0em 0px 1em;     /* top right bottom left */
+  margin: 5px 0em 5px -1.2em;
+}
+
+mark {
+  background-color: var(--gray-100);
+  border: 3px solid var(--base-400);
+  border-radius: 5px;
+  padding: .1em .3em .3em .3em;
+  color: var(--gray-700);
 }
 
 hr {
@@ -77,6 +77,10 @@ table {
   margin: 40px 0;
   border-collapse: collapse;
   line-height: 1.5em;
+}
+
+th {
+  background-color: var(--gray-300);
 }
 
 th, td {
@@ -113,14 +117,18 @@ tr:nth-child(odd)>td {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   /* font-family: 'Grenze Gotisch', serif; */
   font-family: 'Sansita Swashed', serif;
   font-weight: 400;
   color: var(--gray-800);
+  margin-bottom: 0em;
 }
 p {
-  margin-block-start: 1.5em;
+  margin-block-start: 0em;
   margin-block-end: 1.5em;
 }
 p,
